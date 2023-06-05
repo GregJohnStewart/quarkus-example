@@ -8,13 +8,14 @@ import jakarta.persistence.NonUniqueResultException;
 import lombok.extern.slf4j.Slf4j;
 import org.acme.CalcAction;
 import org.acme.CalcResponse;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 
 @Slf4j
 @ApplicationScoped
 public class CalcCacheService {
 
-    @Inject
+    @RestClient
     CalculatorService calculatorService;
 
     @Inject

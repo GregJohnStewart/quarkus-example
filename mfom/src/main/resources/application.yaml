@@ -1,6 +1,6 @@
 quarkus:
   datasource:
-    db-kind: ms-sql
+    db-kind: mssql
   rest-client:
     CalculatorService:
       url:

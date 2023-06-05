@@ -1,0 +1,7 @@
+quarkus:
+  datasource:
+    db-kind: ms-sql
+  rest-client:
+    CalculatorService:
+      url:
+      scope: jakarta.inject.Singleton

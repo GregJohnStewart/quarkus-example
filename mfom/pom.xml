@@ -29,8 +29,22 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok-maven-plugin</artifactId>
+      <version>1.18.20.0</version>
+      <type>maven-plugin</type>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.slf4j</groupId>
+      <artifactId>slf4j-jboss-logmanager</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -47,6 +61,20 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-hibernate-orm</artifactId>
+    </dependency>
+
+    <!-- JDBC driver dependencies -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-mssql</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-config-yaml</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>

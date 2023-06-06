@@ -40,6 +40,8 @@ namespace HelloWorldAPI.Controllers
               case "DIVIDE":
                 result = numOne / numTwo;
                 break;
+              default:
+                return BadRequest("Bad Action Given.");
             }
             
             return Ok(result);
